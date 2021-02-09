@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+@import "reset";
+
+
+  $german: #8E6E95;
+
+  $kellie: #39A59C;
+
+  $allegra: #344759;
+
+  $nicole: #E8741E;
+  
+
+
+body {
+  line-height: 1;
+  background: white;
+  color: $kellie;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+.list{
+  list-style-type: square;
+  list-style-position: outside;
+  list-style-image: none;
+  font-size: 50px;
+  font-weight: 50px;
+  color: black;
+}
+.crosstext {
+  list-style-type: square;
+  list-style-position: outside;
+  list-style-image: none;
+  font-size: 50px;
+  font-weight: 50px;
+  color: rgb(43, 241, 43);
+  text-decoration: line-through;
+  
+}
+.lable{
+  font-size: 30px;
+  font-weight: 30px;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: 'Tangerine','Roboto', sans-serif;
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 50px;
+}
+
+.home {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  .Aligner {
+    min-height: 85vh;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .Aligner-2 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .Aligner-item {
+    max-width: 50%;
+  }
+  .menu ul li {
+    padding: 10px 15px;
+    display: inline-block;
+    font-family: 'Tangerine', 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .version-num {
+    background: #E8E8E8;
+    border-radius: 4px;
+    padding: 7px 15px;
+    display: inline-block;
+    font-size: 12px;
+    margin: 10px 0 20px;
+  }
+  a {
+    text-decoration: none;
+    color: #30395C;
+    transition: all 0.3s ease-in-out;
+  }
+  a:hover {
+    color: #43D4D6;
+  }
+}
+.Page-wrapper{
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  .Page {
+    display: flex;
+    justify-content: space-around;
+    width: calc(100vw - 50px);
+    .column {
+      width: 100%;
+      margin-left: 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .heading{
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border: 0.1px solid transparentize(black, .35);
+        width: 100%;
+      }
+     
+    }
+  }
+  .german{
+    background-color: $german;
+  }
+  .kellie{
+    background-color: $kellie;
+  }
+  .allegra{
+    background-color: $allegra;
+  }
+  .nicole{
+    background-color: $nicole;
+  }
+  button{
+    margin: 0 auto;
+    background-color: peru;
+    border-radius: 20px;
+    width: 90px;
+    height: 20px;
+    font-size: 15px;
+    box-shadow: 0 4px 8px rgba(#8E6E95, 0.2);
+  }
+  .button-c{
+    margin: 0 auto;
+    background-color:rgb(43, 241, 43);
+    border-radius: 20px;
+    width: 90px;
+    height: 20px;
+    font-size: 15px;
+    box-shadow: 0 4px 8px rgba(#8E6E95, 0.2);
+  }
+  .button-r{
+    margin: 0 auto;
+    background-color: rgb(241, 19, 19);
+    border-radius: 20px;
+    width: 90px;
+    height: 20px;
+    font-size: 15px;
+    box-shadow: 0 4px 8px rgba(#8E6E95, 0.2);
+  }
+  .task-form{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    label{
+      width:100%;
+    }
+    input{
+      margin-left: 1rem;
+    }
+    button{
+      margin: 1rem auto;
+    }
+  }
+  .germanColumn{
+    .task-form{
+      label{
+        display: flex;
+        justify-content: space-between;
+        span{
+        background-color: $german;
+        color: white;
+        display: block;
+        padding: .2rem 1rem;
+      }
+      }
+    }
+  }
+  .kellieColumn{
+    .task-form{
+      label{
+        display: flex;
+        justify-content: space-between;
+        span{
+        background-color: $kellie;
+        color: white;
+        display: block;
+        padding: .2rem 1rem;
+      }
+      }
+    }
+  }
+
+  .allegraColumn{
+    .task-form{
+      label{
+        display: flex;
+        justify-content: space-between;
+        span{
+        background-color: $allegra;
+        color: white;
+        display: block;
+        padding: .2rem 1rem;
+      }
+      }
+    }
+  }
+
+  .nicoleColumn{
+    .task-form{
+      label{
+        display: flex;
+        justify-content: space-between;
+        span{
+        background-color: $nicole;
+        color: white;
+        display: block;
+        padding: .2rem 1rem;
+      }
+      }
+    }
+  }
+}
